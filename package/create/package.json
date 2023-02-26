@@ -1,0 +1,31 @@
+{
+    "name": "create-lcv",
+    "version": "1.0.0",
+    "description": "",
+    "types": "dist/index.d.ts",
+    "bin": {
+        "create-lcv": "bin/index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "esno script/build",
+        "dev": "esno script/dev"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "dependencies": {
+        "adm-zip": "^0.5.10",
+        "download": "^8.0.0",
+        "fs-extra": "^11.1.0", 
+        "inquirer": "^8.2.5"
+    }
+}

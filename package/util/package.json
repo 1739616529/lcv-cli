@@ -1,0 +1,24 @@
+{
+    "name": "@lcv/util",
+    "version": "1.0.0",
+    "description": "",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "esno script/build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "fs-extra": "^11.1.0"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "require": "./dist/index.js",
+            "import": "./dist/index.mjs"
+        },
+        "./package.json": "./package.json"
+    }
+}

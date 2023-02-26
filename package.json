@@ -1,0 +1,48 @@
+{
+    "name": "lcv-cli",
+    "version": "1.0.0",
+    "description": "",
+    "workspaces": [
+        "package/*"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "esno script/running build",
+        "build:turo": "turbo run build",
+        "dev": "esno script/running dev",
+        "dev:turbo": "turbo run dev",
+        "dev:cli": "cd app/cli && npm run dev",
+        "dev:create": "cd package/create && npm run dev"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@lcv/cli": "workspace:*",
+        "@lcv/create": "workspace:create-lcv@*",
+        "@lcv/util": "workspace:*",
+        "@types/adm-zip": "^0.5.0",
+        "@types/download": "^8.0.2",
+        "@types/fs-extra": "^11.0.1",
+        "@types/inquirer": "^9.0.3",
+        "@types/minimist": "^1.2.2",
+        "@types/node": "^18.14.1",
+        "@types/shelljs": "^0.8.11",
+        "dts-bundle": "^0.7.3",
+        "execa": "^7.0.0",
+        "fs-extra": "^11.1.0",
+        "inquirer": "^8.2.5",
+        "minimist": "^1.2.8",
+        "rollup": "^3.17.2",
+        "shelljs": "^0.8.5",
+        "tsc-alias": "^1.8.2",
+        "tsconfig": "workspace:*",
+        "turbo": "^1.8.2",
+        "typescript": "^4.9.5",
+        "vite": "^4.1.4",
+        "vite-plugin-dts": "^2.0.2"
+    },
+    "dependencies": {
+        "esno": "^0.16.3"
+    }
+}
