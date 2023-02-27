@@ -11,6 +11,8 @@
         "dev": "esno script/dev"
     },
     "keywords": [
+        "template",
+        "lcv",
         "vue",
         "vue2",
         "vue3",
@@ -30,5 +32,11 @@
     },
     "exports": {
         "./package.json": "./package.json"
-    }
+    },
+    "files": [
+        "bin",
+        "dist",
+        "package.json",
+        "LICENSE"
+    ]
 }

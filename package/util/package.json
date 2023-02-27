@@ -7,7 +7,20 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "esno script/build"
     },
-    "keywords": [],
+    "keywords": [
+        "util",
+        "template",
+        "lcv",
+        "vue",
+        "vue2",
+        "vue3",
+        "react",
+        "preact",
+        "vite",
+        "svelte",
+        "electron",
+        "cli"
+    ],
     "author": "",
     "license": "ISC",
     "dependencies": {
@@ -20,5 +33,11 @@
             "import": "./dist/index.mjs"
         },
         "./package.json": "./package.json"
-    }
+    },
+    "files": [
+        "bin",
+        "dist",
+        "package.json",
+        "LICENSE"
+    ]
 }

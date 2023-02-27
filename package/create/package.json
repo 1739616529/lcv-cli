@@ -11,7 +11,19 @@
         "build": "esno script/build",
         "dev": "esno script/dev"
     },
-    "keywords": [],
+    "keywords": [
+        "template",
+        "lcv",
+        "vue",
+        "vue2",
+        "vue3",
+        "react",
+        "preact",
+        "vite",
+        "svelte",
+        "electron",
+        "cli"
+    ],
     "author": "",
     "license": "ISC",
     "exports": {
@@ -28,5 +40,11 @@
         "fs-extra": "^11.1.0", 
         "inquirer": "^8.2.5",
         "@lcv/util": "workspace:*"
-    }
+    },
+    "files": [
+        "bin",
+        "dist",
+        "package.json",
+        "LICENSE"
+    ]
 }
