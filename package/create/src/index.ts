@@ -93,7 +93,7 @@ async function download_project(info: projectInfo) {
 
 function unzip_file(file:string,  dest_path: string) {
     const zip = new AdmZip(file);
-    zip.extractAllTo(dest_path, true, false)
+    zip.extractAllTo(dest_path, true, )
 }
 
 async function run() {
@@ -103,7 +103,7 @@ async function run() {
     
     const { temp_path } = config
     console.log(store_branch_name)
-    unzip_file(`${temp_path}/${file_name}/*`, process.cwd())
+    unzip_file(`${temp_path}/${file_name}`, process.cwd());
     renameSync(store_branch_name, project_info.name)
 }
  

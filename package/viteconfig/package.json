@@ -10,5 +10,8 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@lcv/cli": "workspace:*",
+        "@lcv/util": "workspace:*",
+        "@lcv/create": "workspace:create-lcv@*"
     }
 }

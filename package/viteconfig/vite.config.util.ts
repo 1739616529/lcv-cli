@@ -10,7 +10,6 @@ const out_path_build: {[key:string]:string} = {
     "production": "dist"
 }
 export default <UserConfigFn>function ({mode}) {
-    console.log(mode)
     const user_config_json = <UserConfig>{
         root: join(__dirname, "../../package/util"),
         resolve: {
