@@ -1,1 +1,0 @@
-"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("fs-extra");console.log("555");function r(t,n=e.constants.F_OK){try{return e.accessSync(t,n),!0}catch{return!1}}exports.entrySync=r;
