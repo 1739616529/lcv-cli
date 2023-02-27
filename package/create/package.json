@@ -25,7 +25,7 @@
         "cli"
     ],
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "exports": {
         ".": {
             "types": "./dist/index.d.ts",

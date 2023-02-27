@@ -2,8 +2,11 @@
     "name": "tsconfig",
     "version": "1.0.0",
     "private": true,
+    "scripts": {
+        "build": "esno script/build",
+        "dev": "esno script/dev"
+    },
     "files": [
         "base.json"
-        
     ]
 }

@@ -23,7 +23,7 @@
         "cli"
     ],
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
         "fs-extra": "^11.1.0"
     },

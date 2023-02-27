@@ -8,15 +8,14 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "esno script/running build",
-        "build:turbo": "turbo run build",
+        "turbo": "turbo run",
         "dev": "esno script/running dev",
-        "dev:turbo": "turbo run dev",
         "dev:cli": "cd app/cli && npm run dev",
         "dev:create": "cd package/create && npm run dev"
     },
     "keywords": [],
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "@types/adm-zip": "^0.5.0",
         "@types/download": "^8.0.2",

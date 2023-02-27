@@ -71,7 +71,7 @@ function running_prompt() {
 }
 
 function get_store_info(info: projectInfo) {
-    const {git: {store_name, breatch, url, proxy_url}} = config
+    const {git: {store_name, breatch, url, proxy_url}} = config;
     const _store_name = store_name[info.frame]
     const _breath = breatch[info.typescript && "ts" || "js"]
     const path = `${info.proxy && `${proxy_url}/` || "" }${url}/${_store_name}/archive/refs/heads/${_breath}.zip`

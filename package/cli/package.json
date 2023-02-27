@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "bin": {
-        "emo": "bin/index.js"
+        "lcv": "bin/index.js"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,9 +24,11 @@
         "cli"
     ],
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
-        "inquirer": "^8.2.5"
+        "inquirer": "^8.2.5",
+        "@lcv/util": "workspace:*",
+        "create-lcv": "workspace:*"
     },
     "devDependencies": {
     },
