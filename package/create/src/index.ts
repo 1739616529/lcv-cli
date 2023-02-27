@@ -4,7 +4,7 @@ import { entrySync } from "@lcv/util";
 import config from "./config";
 import download from "download";
 import AdmZip from 'adm-zip';
-import {renameSync} from "fs-extra"
+import {renameSync} from "fs-extra";
 
 export const enum Order {
     name = "name",
@@ -93,7 +93,7 @@ async function download_project(info: projectInfo) {
 
 function unzip_file(file:string,  dest_path: string) {
     const zip = new AdmZip(file);
-    zip.extractAllToAsync(dest_path, true, false, () =>{})
+    zip.extractAllTo(dest_path, true, false)
 }
 
 async function run() {
@@ -103,8 +103,8 @@ async function run() {
     
     const { temp_path } = config
     console.log(store_branch_name)
-    unzip_file(`${temp_path}/${file_name}`, process.cwd())
-    renameSync(join(process.cwd(), store_branch_name), join(process.cwd(), project_info.name))
+    unzip_file(`${temp_path}/${file_name}/*`, process.cwd())
+    renameSync(store_branch_name, project_info.name)
 }
  
 run()
