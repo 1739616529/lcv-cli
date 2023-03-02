@@ -25,13 +25,14 @@
     "author": "",
     "license": "MIT",
     "dependencies": {
-        "fs-extra": "^11.1.0"
+        "fs-extra": "^11.1.0",
+        "shelljs": "^0.8.5"
     },
     "exports": {
         ".": {
             "types": "./dist/index.d.ts",
             "require": "./dist/index.js",
-            "import": "./dist/index.mjs"
+            "import": "./dist/index.js"
         },
         "./package.json": "./package.json"
     },
@@ -40,5 +41,8 @@
         "dist",
         "package.json",
         "LICENSE"
-    ]
+    ],
+    "devDependencies": {
+        "@types/shelljs": "^0.8.11"
+    }
 }

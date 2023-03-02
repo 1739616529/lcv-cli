@@ -85,9 +85,9 @@ function get_store_info(info: projectInfo) {
 async function download_project(info: projectInfo) {
     let {path, file_name, store_branch_name} = get_store_info(info)
     const { temp_path } = config
-    // await download(path, temp_path, {
-    //     filename: file_name
-    // })
+    await download(path, temp_path, {
+        filename: file_name
+    })
     return {file_name, store_branch_name}
 }
 
@@ -96,7 +96,7 @@ function unzip_file(file:string,  dest_path: string) {
     zip.extractAllTo(dest_path, true, )
 }
 
-async function run() {
+export async function run() {
     const project_info = await running_prompt();
     const {file_name, store_branch_name} = await download_project(project_info);
 
@@ -107,4 +107,3 @@ async function run() {
     renameSync(store_branch_name, project_info.name)
 }
  
-run()

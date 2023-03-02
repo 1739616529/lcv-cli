@@ -28,7 +28,7 @@ export default <UserConfigFn>function ({mode}) {
             sourcemap: false,
             lib: {
                 entry: "src/index",
-                formats: ["cjs", "es"],
+                formats: ["cjs"],
                 fileName: "index",
             },
             rollupOptions: {

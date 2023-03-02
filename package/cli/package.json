@@ -26,11 +26,11 @@
     "author": "",
     "license": "MIT",
     "dependencies": {
-        "inquirer": "^8.2.5",
         "@lcv/util": "workspace:*",
-        "create-lcv": "workspace:*"
-    },
-    "devDependencies": {
+        "commander": "^10.0.0",
+        "create-lcv": "workspace:*",
+        "inquirer": "^8.2.5",
+        "shelljs": "^0.8.5"
     },
     "exports": {
         "./package.json": "./package.json"
@@ -40,5 +40,8 @@
         "dist",
         "package.json",
         "LICENSE"
-    ]
+    ],
+    "devDependencies": {
+        "@types/shelljs": "^0.8.11"
+    }
 }
