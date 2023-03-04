@@ -28,7 +28,7 @@ function interaction() {
 
 const exec_pack_mgn_registry = (() => {
     const ditc_exec_order: {[key in PackManage]: (url: string) => string} = {
-        [PackManage.npm]: (url: string) => `npm -g config set registry ${url}`,
+        [PackManage.npm]: (url: string) => `npm config set registry ${url}`,
         [PackManage.cnpm]: (url: string) => '',
         [PackManage.yarn]: (url: string) => `yarn config set registry ${url}`,
         [PackManage.pnpm]: (url: string) => '',
