@@ -39,7 +39,7 @@
         "download": "^8.0.0",
         "fs-extra": "^11.1.0", 
         "inquirer": "^8.2.5",
-        "@lcv/util": "workspace:*"
+        "@lcv/util": "*"
     },
     "files": [
         "bin",
