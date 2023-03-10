@@ -102,7 +102,6 @@ export async function run() {
 
     
     const { temp_path } = config
-    console.log(store_branch_name)
     unzip_file(`${temp_path}/${file_name}`, process.cwd());
     renameSync(store_branch_name, project_info.name)
 }
