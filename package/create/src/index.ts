@@ -59,7 +59,7 @@ function running_prompt() {
         },
         {
             type: "confirm",
-            message: "开启代理(仓库在github.com 国内访问异常建议开启). (Typescript Supper)",
+            message: "开启代理(仓库在github.com 国内访问异常建议开启). (enable proxy)",
             name: Order.proxy,
             default: true,
         },
