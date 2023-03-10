@@ -1,5 +1,5 @@
 {
-    "name": "create-lcv",
+    "name": "@lcv/create",
     "version": "1.0.1",
     "description": "",
     "types": "dist/index.d.ts",
