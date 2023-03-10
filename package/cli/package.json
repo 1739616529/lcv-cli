@@ -26,9 +26,9 @@
     "author": "",
     "license": "MIT",
     "dependencies": {
-        "@lcv/util": "workspace:*",
+        "@lcv/util": "*",
         "commander": "^10.0.0",
-        "create-lcv": "workspace:*",
+        "create-lcv": "*",
         "inquirer": "^8.2.5",
         "shelljs": "^0.8.5"
     },
