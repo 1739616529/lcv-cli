@@ -104,5 +104,11 @@ export async function run() {
     const { temp_path } = config
     unzip_file(`${temp_path}/${file_name}`, process.cwd());
     renameSync(store_branch_name, project_info.name)
+    console.log(`
+✨✨✨
+    cd ${project_info.name}
+    npm install
+✨✨✨
+    `)
 }
  
