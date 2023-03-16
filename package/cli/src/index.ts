@@ -54,10 +54,10 @@ function run () {
     const argv_len = process.argv.length
 
 
-    if (argv_len <= 2) {
-        interaction()
-        return 
-    }
+    // if (argv_len <= 2) {
+    //     interaction()
+    //     return 
+    // }
 
     run_command()
 }
