@@ -3,7 +3,7 @@ import { join } from "path";
 import { UserConfig, UserConfigFn } from "vite";
 import dts from "vite-plugin-dts"
 import { build_external_list } from "./config";
-import { dependencies } from '@lcv/create/package.json'
+import { dependencies } from 'create-lcv/package.json'
 
 const out_path_build: {[key:string]:string} = {
     "development": "bin",
@@ -11,7 +11,7 @@ const out_path_build: {[key:string]:string} = {
 }
 export default <UserConfigFn>function ({mode}) {
     const user_config_json = <UserConfig>{
-        root: join(__dirname, "../../package/create"),
+        root: join(__dirname, "../../package/create-lcv"),
         resolve: {
             project: "./",
             src: "./src"

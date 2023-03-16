@@ -42,6 +42,7 @@
         "LICENSE"
     ],
     "devDependencies": {
-        "@types/shelljs": "^0.8.11"
+        "@types/shelljs": "^0.8.11",
+        "vite": "^4.1.4"
     }
 }
