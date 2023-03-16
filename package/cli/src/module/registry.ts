@@ -47,7 +47,6 @@ export default {
         }
         packlist.forEach((v) => {
             const url = exec_pack_mgn_registry(v, origin_url, type)
-            console.log(url)
             url && exec(url)
         })
     }
