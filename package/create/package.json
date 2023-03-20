@@ -1,6 +1,6 @@
 {
     "name": "@lcv/create",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "",
     "bin": "bin/index.js",
     "scripts": {
@@ -30,8 +30,7 @@
     "files": [
         "bin",
         "dist",
-        "package.json",
-        "LICENSE"
+        "package.json"
     ],
     "devDependencies": {
         "vite": "^4.1.4"
