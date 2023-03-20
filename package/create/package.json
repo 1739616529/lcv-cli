@@ -1,8 +1,10 @@
 {
     "name": "@lcv/create",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "",
-    "bin": "bin/index.js",
+    "bin": {
+        "create-lcv1": "bin/index.js"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "esno script/build",
