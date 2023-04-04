@@ -1,6 +1,6 @@
 {
     "name": "create-lcv",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "",
     "types": "dist/index.d.ts",
     "bin": {
@@ -36,7 +36,6 @@
         "./package.json": "./package.json"
     },
     "dependencies": {
-        "@lcv/util": "*",
         "adm-zip": "^0.5.10",
         "download": "^8.0.0",
         "fs-extra": "^11.1.0",

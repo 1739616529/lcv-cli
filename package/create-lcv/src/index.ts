@@ -1,10 +1,17 @@
 import { join } from 'path';
 import inquirer, {QuestionCollection} from "inquirer";
-import { entrySync } from "@lcv/util";
 import config from "./config";
 import download from "download";
 import AdmZip from 'adm-zip';
-import {renameSync} from "fs-extra";
+import fs, {renameSync, accessSync} from "fs-extra";
+export function entrySync(path: string, mode: number = fs.constants.F_OK): boolean {
+    try {
+        accessSync(path, mode);
+        return true;
+    } catch {
+        return false;
+    }
+}
 
 export const enum Order {
     name = "name",
