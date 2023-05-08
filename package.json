@@ -1,7 +1,7 @@
 {
     "name": "lcv-cli",
     "version": "1.0.0",
-    "description": "",
+    "description": "一个用于创建electron项目模板的脚手架",
     "workspaces": [
         "package/*"
     ],
