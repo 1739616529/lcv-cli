@@ -1,4 +1,5 @@
-import fs, { accessSync } from "fs-extra";
+import  * as fs from "fs-extra";
+import { accessSync } from "fs-extra"
 import { which } from "shelljs"
 export function entrySync(path: string, mode: number = fs.constants.F_OK): boolean {
     try {

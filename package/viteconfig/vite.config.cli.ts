@@ -27,7 +27,7 @@ export default <UserConfigFn>function ({mode}) {
                 fileName: "index",
             },
             rollupOptions: {
-                external: [...builtinModules, ...build_external_list, ...Object.keys(dependencies)]
+                external: [...builtinModules, ...build_external_list, ...Object.keys(dependencies || {})]
             }
         },
         

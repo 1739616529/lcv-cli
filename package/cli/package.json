@@ -1,6 +1,6 @@
 {
     "name": "@lcv/cli",
-    "version": "1.0.2",
+    "version": "1.0.5",
     "description": "",
     "bin": {
         "lcv": "bin/index.js"
@@ -8,6 +8,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "esno script/build",
+        "prepublish": "npm run build",
         "dev": "esno script/dev"
     },
     "keywords": [
@@ -25,13 +26,6 @@
     ],
     "author": "",
     "license": "MIT",
-    "dependencies": {
-        "@lcv/util": "*",
-        "commander": "^10.0.0",
-        "create-lcv": "*",
-        "inquirer": "^8.2.5",
-        "shelljs": "^0.8.5"
-    },
     "exports": {
         "./package.json": "./package.json"
     },
@@ -43,6 +37,13 @@
     ],
     "devDependencies": {
         "@types/shelljs": "^0.8.11",
+        "create-lcv": "^1.1.2",
         "vite": "^4.1.4"
+    },
+    "dependencies": {
+        "@lcv/util": "^1.0.4",
+        "commander": "^11.0.0",
+        "inquirer": "8",
+        "shelljs": "^0.8.5"
     }
 }
